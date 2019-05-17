@@ -7,9 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "native-base": "^2.12.1",
     "react": "16.8.3",
     "react-native": "0.59.8",
-    "react-native-maps": "^0.24.2"
+    "react-native-fbsdk": "^0.8.0",
+    "react-native-gesture-handler": "^1.2.1",
+    "react-native-maps": "^0.24.2",
+    "react-navigation": "^3.9.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

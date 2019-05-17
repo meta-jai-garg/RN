@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, { Component } from "react";
 import { StyleSheet, Dimensions, View } from "react-native";
 import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
@@ -17,7 +9,7 @@ const LONGITUDE = 0;
 const LATITUDE_DELTA = 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
-export default class App extends Component {
+export default class MyLocation extends Component {
   constructor() {
     super();
     this.state = {
@@ -32,7 +24,7 @@ export default class App extends Component {
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(
       position => {
-        console.log(JSON.stringify(position))
+        console.log(JSON.stringify(position));
         this.setState({
           region: {
             latitude: position.coords.latitude,

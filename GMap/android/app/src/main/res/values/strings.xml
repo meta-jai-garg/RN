@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GMap</string>
     <string name="map_key">MAP_API_KEY</string>
+    <string name="facebook_app_id">FB_KEY</string>
 </resources>

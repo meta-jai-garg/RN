@@ -45,6 +45,8 @@ target 'GMap' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+  pod 'react-native-camera-kit', :path => '../node_modules/react-native-camera-kit'
+
 end
 
 post_install do |installer|

@@ -47,23 +47,23 @@ export default App;
 class WelcomeScreen extends Component {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-        <TouchableNativeFeedback
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center", backgroundColor:'white' }}>
+        <TouchableOpacity
           onPress={() => this.props.navigation.navigate("Dashboard")}
           background={TouchableNativeFeedback.Ripple("#F7DCDC", false)}
         >
           <View style={styles.button}>
             <Text style={styles.btnText}>LOGIN</Text>
           </View>
-        </TouchableNativeFeedback>
-        <TouchableNativeFeedback
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => this.props.navigation.navigate("Dashboard")}
           background={TouchableNativeFeedback.Ripple("#C0EB6A", false)}
         >
           <View style={[styles.button, { backgroundColor: "#485550" }]}>
             <Text style={styles.btnText}>SIGN UP</Text>
           </View>
-        </TouchableNativeFeedback>
+        </TouchableOpacity>
       </View>
     );
   }

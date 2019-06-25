@@ -47,6 +47,9 @@ target 'GMap' do
 
   pod 'react-native-camera-kit', :path => '../node_modules/react-native-camera-kit'
 
+
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+
 end
 
 post_install do |installer|

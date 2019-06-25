@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import {
-    StyleSheet,
-    SafeAreaView,
-    Image
-} from "react-native";
+import { StyleSheet, SafeAreaView, Image } from "react-native";
 import { Card, Text, Button } from "native-base";
 
 export default class ProfilePage extends Component {
@@ -61,7 +57,9 @@ export default class ProfilePage extends Component {
     };
 
     openCamera = () => {
-        this.props.navigation.navigate("ImagePicker");
+        this.props.navigation.navigate("ImagePicker", {
+            onSelect: this.onSelect
+        });
     };
 }
 

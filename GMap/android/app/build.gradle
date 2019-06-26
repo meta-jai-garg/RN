@@ -107,6 +107,8 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
     }
     splits {
         abi {
@@ -137,8 +139,20 @@ android {
     }
 }
 
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion "26.0.1"
+            }
+        }
+    }
+}
+
 dependencies {
-    implementation project(':react-native-camera-kit')
+    implementation project(':react-native-image-crop-picker')
+    implementation project(':rncamerakit')
     implementation project(':react-native-gesture-handler')
     implementation project(':react-native-fbsdk')
     implementation project(':react-native-maps')

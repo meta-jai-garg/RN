@@ -2601,6 +2601,11 @@ has@^1.0.1, has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hex-to-rgba@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hex-to-rgba/-/hex-to-rgba-1.0.2.tgz#1273dc05a499ddc955b80220ae04dcf542decfec"
+  integrity sha512-fL+4NFccs86iOuDnFl1Mhyn471qTPAkpE7k39+JYGPMB3+S9LoUnauQI2nz6BUb3DpYQCx8RqENbaf8IFdKYOg==
+
 hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
@@ -2723,7 +2728,7 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -3666,9 +3671,9 @@ lodash.throttle@^4.1.1:
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
 lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.6.1:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
@@ -4826,7 +4831,7 @@ prompts@^2.0.1:
     kleur "^3.0.2"
     sisteransi "^1.0.0"
 
-prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4936,6 +4941,15 @@ react-native-circular-progress@^1.1.0:
   dependencies:
     prop-types "^15.6.2"
 
+react-native-gesture-handler@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.3.0.tgz#d0386f565928ccc1849537f03f2e37fd5f6ad43f"
+  integrity sha512-ASRFIXBuKRvqlmwkWJhV8yP2dTpvcqVrLNpd7FKVBFHYWr6SAxjGyO9Ik8w1lAxDhMlRP2IcJ9p9eq5X2WWeLQ==
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+    invariant "^2.2.2"
+    prop-types "^15.5.10"
+
 react-native-linear-gradient@^2.5.4:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.5.4.tgz#dce133526f5a5510a639af94544f1ed0c984bd1e"
@@ -4957,6 +4971,11 @@ react-native-safe-area-view@^0.14.1:
   version "1.0.0-alpha.22"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-1.0.0-alpha.22.tgz#7a120377b52aa9bbb94d0b8541a014026be9289b"
   integrity sha512-kSyAt0AeVU6N7ZonfV6dP6iZF8B7Bce+tk3eujXhzBGsLg0VSLnU7uE9VqJF0xdQrHR91ZjGgVMieo/8df9KTA==
+
+react-native-svg@^9.4.0:
+  version "9.5.1"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-9.5.1.tgz#eb21fa7eb5d71649620541e6549c6ed425d80240"
+  integrity sha512-cRGfomzG/5LEwuJ6ct3m5yccckeI9aj8BNYwDPVxOeJ84LuJuvk5OqcjlYNeEzOWmWiH+QrFXfpLH1ag04bUeQ==
 
 react-native-tab-view@^1.2.0, react-native-tab-view@^1.4.1:
   version "1.4.1"

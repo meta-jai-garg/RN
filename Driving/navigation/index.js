@@ -1,17 +1,17 @@
 import React from "react";
 import { createAppContainer, createStackNavigator } from "react-navigation";
 
-import Welcome from "../screens/Welcome";
-import Rewards from "../screens/Rewards";
-import Trip from "../screens/Trip";
+import Wel from "../screens";
+import Rewa from "../screens";
+import Tri from "../screens";
 
 import { theme } from "../constants";
 
 const screens = createStackNavigator(
     {
-        Welcome,
-        Rewards,
-        Trip
+        Wel,
+        Rewa,
+        Tri
     },
     {
         defaultNavigationOptions: {
